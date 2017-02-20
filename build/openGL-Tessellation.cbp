@@ -60,6 +60,7 @@
             <Add option="-DGLEW_STATIC" />
             <Add option="-D_CRT_SECURE_NO_WARNINGS" />
             <Add directory="/data/Workspace/openGL-Tessellation/." />
+            <Add directory="/data/Workspace/openGL-Tessellation/common" />
             <Add directory="/data/Workspace/openGL-Tessellation/external/AntTweakBar-1.16/include" />
             <Add directory="/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/include" />
             <Add directory="/data/Workspace/openGL-Tessellation/external/bullet-2.81-rev2613/src" />
@@ -87,6 +88,7 @@
             <Add option="-DGLEW_STATIC" />
             <Add option="-D_CRT_SECURE_NO_WARNINGS" />
             <Add directory="/data/Workspace/openGL-Tessellation/." />
+            <Add directory="/data/Workspace/openGL-Tessellation/common" />
             <Add directory="/data/Workspace/openGL-Tessellation/external/AntTweakBar-1.16/include" />
             <Add directory="/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/include" />
             <Add directory="/data/Workspace/openGL-Tessellation/external/bullet-2.81-rev2613/src" />
@@ -1643,8 +1645,32 @@
       <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp">
          <Option target="PN_Triangles"/>
       </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Standard.frag">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Standard.vert">
+         <Option target="PN_Triangles"/>
+      </Unit>
       <Unit filename="/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/src/glfw_config.h">
          <Option target="glfw"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/common/objloader.cpp">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/common/objloader.hpp">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/common/shader.cpp">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/common/shader.hpp">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/common/vboindexer.cpp">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/common/vboindexer.hpp">
+         <Option target="PN_Triangles"/>
       </Unit>
       <Unit filename="/data/Workspace/openGL-Tessellation/external/AntTweakBar-1.16/src/AntPerfTimer.h">
          <Option target="ANTTWEAKBAR_116_OGLCORE_GLFW"/>

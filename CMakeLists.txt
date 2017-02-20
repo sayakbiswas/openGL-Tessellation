@@ -33,11 +33,19 @@ add_definitions(
 	-D_CRT_SECURE_NO_WARNINGS
 )
 
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Model/Suzanne.obj DESTINATION Model/)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Model/Suzanne.mtl DESTINATION Model/)
+
 # PN Triangles
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/PN_Triangles/shaders/Standard.vert DESTINATION shaders/)
+file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/PN_Triangles/shaders/Standard.frag DESTINATION shaders/)
 add_executable(PN_Triangles
 	PN_Triangles/pn_triangles.cpp
         common/objloader.cpp
         common/vboindexer.cpp
+        common/shader.cpp
+        PN_Triangles/shaders/Standard.vert
+        PN_Triangles/shaders/Standard.frag
 )
 
 target_link_libraries(PN_Triangles

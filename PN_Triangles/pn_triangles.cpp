@@ -11,16 +11,14 @@
 #include <fstream>
 #include <vector>
 #include <common/objloader.hpp>
+#include <common/vboindexer.hpp>
+#include <common/shader.hpp>
 
 using namespace glm;
 using namespace std;
 
 const int window_width = 800, window_height = 600;
 GLFWwindow *window;
-glm::mat4 gProjectionMatrix;
-glm::mat4 gViewMatrix;
-GLuint programID;
-
 typedef struct Vertex {
     float Position[4];
     float Color[4];
@@ -46,15 +44,42 @@ typedef struct Vertex {
         Normal[2] = normal[2];
     }
 } Vertex;
+glm::mat4 gProjectionMatrix;
+glm::mat4 gViewMatrix;
+GLuint programID;
+const GLuint numObjects = 256;
+GLuint vertexBufferID[numObjects] = {0};
+GLuint vertexArrayID[numObjects] = {0};
+GLuint indexBufferID[numObjects] = {0};
+size_t numIndices[numObjects] = {0};
+size_t vertexBufferSize[numObjects] = {0};
+size_t indexBufferSize[numObjects] = {0};
+Vertex* suzanne_verts;
+GLushort* suzanne_idcs;
+GLuint matrixID;
+GLuint modelMatrixID;
+GLuint viewMatrixID;
+GLuint projectionMatrixID;
+GLuint lightID;
+GLfloat cameraAngleTheta = 3.142 / 4;
+GLfloat cameraAnglePhi = asin(1 / sqrt(3));
+GLfloat cameraSphereRadius = sqrt(675);
+bool moveCameraLeft = false;
+bool moveCameraRight = false;
+bool moveCameraUp = false;
+bool moveCameraDown = false;
 
 int initWindow(void);
 void initOpenGL(void);
 void createObjects(void);
 static void keyCallback(GLFWwindow* , int, int, int, int);
 static void mouseCallback(GLFWwindow*, int, int, int);
-static GLuint loadStandardShaders(const char*, const char*);
-static GLuint loadTessShaders(const char*, const char*, const char*, const char*);
+GLuint loadStandardShaders(const char*, const char*);
+GLuint loadTessShaders(const char*, const char*, const char*, const char*);
 void loadObject(char*, glm::vec4, Vertex* &, GLushort* &, int);
+void createVAOs(Vertex[], GLushort[], int);
+void renderScene(void);
+void cleanup(void);
 
 int main(void) {
     int errorCode = initWindow();
@@ -63,6 +88,14 @@ int main(void) {
     }
 
     initOpenGL();
+
+    do {
+        renderScene();
+    } while(glfwGetKey(window, GLFW_KEY_ESCAPE) != GLFW_PRESS && glfwWindowShouldClose(window) == 0);
+
+    cleanup();
+
+    return 0;
 }
 
 void initOpenGL() {
@@ -80,29 +113,154 @@ void initOpenGL() {
                                 "shaders/Tessellation.frag");*/
     programID = loadStandardShaders("shaders/Standard.vert", "shaders/Standard.frag");
 
+    matrixID = glGetUniformLocation(programID, "MVP");
+    modelMatrixID = glGetUniformLocation(programID, "M");
+    viewMatrixID = glGetUniformLocation(programID, "V");
+    projectionMatrixID = glGetUniformLocation(programID, "P");
+    lightID = glGetUniformLocation(programID, "lightPosition_worldspace");
+
     createObjects();
 }
 
 void createObjects() {
+    //-- COORDINATE AXES --//
+    Vertex coordVerts[] =
+    {
+        { { 0.0, 0.0, 0.0, 1.0 },{ 1.0, 0.0, 0.0, 1.0 },{ 0.0, 0.0, 1.0 } },
+        { { 5.0, 0.0, 0.0, 1.0 },{ 1.0, 0.0, 0.0, 1.0 },{ 0.0, 0.0, 1.0 } },
+        { { 0.0, 0.0, 0.0, 1.0 },{ 0.0, 1.0, 0.0, 1.0 },{ 0.0, 0.0, 1.0 } },
+        { { 0.0, 5.0, 0.0, 1.0 },{ 0.0, 1.0, 0.0, 1.0 },{ 0.0, 0.0, 1.0 } },
+        { { 0.0, 0.0, 0.0, 1.0 },{ 0.0, 0.0, 1.0, 1.0 },{ 0.0, 0.0, 1.0 } },
+        { { 0.0, 0.0, 5.0, 1.0 },{ 0.0, 0.0, 1.0, 1.0 },{ 0.0, 0.0, 1.0 } },
+    };
 
+    vertexBufferSize[0] = sizeof(coordVerts);	// ATTN: this needs to be done for each hand-made object with the ObjectID (subscript)
+    createVAOs(coordVerts, NULL, 0);
+
+    loadObject("Model/Suzanne.obj", glm::vec4(1.0, 1.0, 1.0, 1.0), suzanne_verts, suzanne_idcs, 1);
+    createVAOs(suzanne_verts, suzanne_idcs, 1);
 }
 
 void loadObject(char* file, glm::vec4 color, Vertex* &out_vertices, GLushort* &out_indices, int objectID) {
     vector<glm::vec3> vertices;
-    vector<glm::vec3> uvs;
-    vector<glm::vec3> normal;
+    vector<glm::vec3> normals;
 
-    bool res = loadOBJ(file, vertices, normal);
+    bool res = loadOBJ(file, vertices, normals);
 
     vector<GLushort> indices;
     vector<glm::vec3> indexed_vertices;
     vector<glm::vec3> indexed_normals;
-    vector<glm::vec2> indexed_uvs;
+    indexVBO(vertices, normals, indices, indexed_vertices, indexed_normals);
 
+    const size_t vert_count = indexed_vertices.size();
+    const size_t idx_count = indices.size();
 
+    out_vertices = new Vertex[vert_count];
+    for(int i = 0; i < vert_count; i++) {
+        out_vertices[i].SetPosition(&indexed_vertices[i].x);
+        out_vertices[i].SetNormal(&indexed_normals[i].x);
+        out_vertices[i].SetColor(&color[0]);
+    }
+
+    out_indices = new GLushort[idx_count];
+    for(int i = 0; i < idx_count; i++) {
+        out_indices[i] = indices[i];
+    }
+
+    numIndices[objectID] = idx_count;
+    vertexBufferSize[objectID] = sizeof(out_vertices[0]) * vert_count;
+    indexBufferSize[objectID] = sizeof(GLushort) * idx_count;
 }
 
-static GLuint loadStandardShaders(const char *vert_file_path, const char *frag_file_path) {
+void createVAOs(Vertex vertices[], GLushort indices[], int objectID) {
+    GLenum errorCheckValue = glGetError();
+    const size_t vertexSize = sizeof(vertices[0]);
+    const size_t colorOffset = sizeof(vertices[0].Position);
+    const size_t normalOffset = colorOffset + sizeof(vertices[0].Color);
+
+    glGenVertexArrays(1, &vertexArrayID[objectID]);
+    glBindVertexArray(vertexArrayID[objectID]);
+
+    glGenBuffers(1, &vertexBufferID[objectID]);
+    glBindBuffer(GL_ARRAY_BUFFER, vertexBufferID[objectID]);
+    glBufferData(GL_ARRAY_BUFFER, vertexBufferSize[objectID], vertices, GL_STATIC_DRAW);
+
+    if(indices != NULL) {
+        glGenBuffers(1, &indexBufferID[objectID]);
+        glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, indexBufferID[objectID]);
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, indexBufferSize[objectID], indices, GL_STATIC_DRAW);
+    }
+
+    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, vertexSize, 0);
+    glVertexAttribPointer(1, 4, GL_FLOAT, GL_FALSE, vertexSize, (GLvoid*)colorOffset);
+    glVertexAttribPointer(2, 4, GL_FLOAT, GL_FALSE, vertexSize, (GLvoid*)normalOffset);
+
+    glEnableVertexAttribArray(0);
+    glEnableVertexAttribArray(1);
+    glEnableVertexAttribArray(2);
+
+    glBindVertexArray(0);
+
+    errorCheckValue = glGetError();
+    if(errorCheckValue != GL_NO_ERROR) {
+        fprintf(stderr, "Error: Could not create a VBO: %s\n", gluErrorString(errorCheckValue));
+    }
+}
+
+void renderScene() {
+    glClearColor(0.0f, 0.0f, 0.2f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_CULL_FACE);
+
+    if (moveCameraLeft) {
+        cameraAngleTheta -= 0.01f;
+    }
+
+    if (moveCameraRight) {
+        cameraAngleTheta += 0.01f;
+    }
+
+    if (moveCameraUp) {
+        cameraAnglePhi -= 0.01f;
+    }
+
+    if (moveCameraDown) {
+        cameraAnglePhi += 0.01f;
+    }
+
+    if (moveCameraLeft || moveCameraRight || moveCameraDown || moveCameraUp) {
+        float camX = cameraSphereRadius * cos(cameraAnglePhi) * sin(cameraAngleTheta);
+        float camY = cameraSphereRadius * sin(cameraAnglePhi);
+        float camZ = cameraSphereRadius * cos(cameraAnglePhi) * cos(cameraAngleTheta);
+        gViewMatrix = glm::lookAt(glm::vec3(camX, camY, camZ),	// eye
+            glm::vec3(0.0, 10.0, 0.0),	// center
+            glm::vec3(0.0, 1.0, 0.0));	// up
+    }
+
+    glUseProgram(programID);
+    {
+        glm::vec3 lightPos = glm::vec3(10.0f, 10.0f, 10.0f);
+        glm::mat4x4 modelMatrix = glm::mat4(1.0);
+        glUniform3f(lightID, lightPos.x, lightPos.y, lightPos.z);
+        glUniformMatrix4fv(viewMatrixID, 1, GL_FALSE, &gViewMatrix[0][0]);
+        glUniformMatrix4fv(projectionMatrixID, 1, GL_FALSE, &gProjectionMatrix[0][0]);
+        glUniformMatrix4fv(modelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
+
+        glBindVertexArray(vertexArrayID[0]);	// draw CoordAxes
+        glDrawArrays(GL_LINES, 0, 6);
+
+        glBindVertexArray(vertexArrayID[1]);
+        glDrawElements(GL_TRIANGLES, numIndices[1], GL_UNSIGNED_SHORT, (GLvoid*)0);
+
+        glBindVertexArray(0);
+    }
+
+    glUseProgram(0);
+    glfwSwapBuffers(window);
+    glfwPollEvents();
+}
+
+GLuint loadStandardShaders(const char *vert_file_path, const char *frag_file_path) {
     GLuint vertexShaderID = glCreateShader(GL_VERTEX_SHADER);
     GLuint fragmentShaderID = glCreateShader(GL_FRAGMENT_SHADER);
 
@@ -147,7 +305,7 @@ static GLuint loadStandardShaders(const char *vert_file_path, const char *frag_f
     if(infoLogLength > 0) {
         vector<char> vertexShaderErrorMessage(infoLogLength + 1);
         glGetShaderInfoLog(vertexShaderID, infoLogLength, NULL, &vertexShaderErrorMessage[0]);
-        cout << vertexShaderErrorMessage[0] << endl;
+        cout << &vertexShaderErrorMessage[0] << endl;
     }
 
     cout << "Compiling shader " <<  frag_file_path << endl;
@@ -160,7 +318,7 @@ static GLuint loadStandardShaders(const char *vert_file_path, const char *frag_f
     if(infoLogLength > 0) {
         vector<char> fragmentShaderErrorMessage(infoLogLength + 1);
         glGetShaderInfoLog(fragmentShaderID, infoLogLength, NULL, &fragmentShaderErrorMessage[0]);
-        cout << fragmentShaderErrorMessage[0] << endl;
+        cout << &fragmentShaderErrorMessage[0] << endl;
     }
 
     cout << "Linking shader" << endl;
@@ -186,7 +344,7 @@ static GLuint loadStandardShaders(const char *vert_file_path, const char *frag_f
     return programID;
 }
 
-static GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_file_path, const char *tess_eval_file_path,
+GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_file_path, const char *tess_eval_file_path,
                               const char *tess_frag_file_path) {
 
 }
@@ -224,8 +382,52 @@ int initWindow() {
     return 0;
 }
 
-static void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods) {
+void cleanup() {
+    for(int i = 0; i < numObjects; i++) {
+        glDeleteBuffers(1, &vertexBufferID[i]);
+        glDeleteBuffers(1, &indexBufferID[i]);
+        glDeleteVertexArrays(1, &vertexArrayID[i]);
+    }
+    glDeleteProgram(programID);
+    glfwTerminate();
+}
 
+static void keyCallback(GLFWwindow *window, int key, int scancode, int action, int mods) {
+    if(action == GLFW_PRESS) {
+        switch (key) {
+        case GLFW_KEY_LEFT:
+            moveCameraLeft = true;
+            break;
+        case GLFW_KEY_RIGHT:
+            moveCameraRight = true;
+            break;
+        case GLFW_KEY_UP:
+            moveCameraUp = true;
+            break;
+        case GLFW_KEY_DOWN:
+            moveCameraDown = true;
+            break;
+        default:
+            break;
+        }
+    } else if(action == GLFW_RELEASE) {
+        switch (key) {
+        case GLFW_KEY_LEFT:
+            moveCameraLeft = false;
+            break;
+        case GLFW_KEY_RIGHT:
+            moveCameraRight = false;
+            break;
+        case GLFW_KEY_UP:
+            moveCameraUp = false;
+            break;
+        case GLFW_KEY_DOWN:
+            moveCameraDown = false;
+            break;
+        default:
+            break;
+        }
+    }
 }
 
 static void mouseCallback(GLFWwindow *window, int button, int action, int mods) {

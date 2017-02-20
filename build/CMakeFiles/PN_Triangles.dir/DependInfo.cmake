@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o"
   "/data/Workspace/openGL-Tessellation/common/objloader.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o"
+  "/data/Workspace/openGL-Tessellation/common/shader.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/shader.cpp.o"
   "/data/Workspace/openGL-Tessellation/common/vboindexer.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
