@@ -3,7 +3,6 @@
 
 CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o
  .././common/objloader.hpp
- .././common/shader.hpp
  .././common/vboindexer.hpp
  ../external/glew-1.13.0/include/GL/glew.h
  ../external/glfw-3.1.2/include/GLFW/glfw3.h
@@ -175,10 +174,6 @@ CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o
  ../external/glm-0.9.7.1/glm/vector_relational.hpp
  /data/Workspace/openGL-Tessellation/common/objloader.cpp
  /data/Workspace/openGL-Tessellation/common/objloader.hpp
-CMakeFiles/PN_Triangles.dir/common/shader.cpp.o
- ../external/glew-1.13.0/include/GL/glew.h
- /data/Workspace/openGL-Tessellation/common/shader.cpp
- /data/Workspace/openGL-Tessellation/common/shader.hpp
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o
  ../external/glm-0.9.7.1/glm/common.hpp
  ../external/glm-0.9.7.1/glm/detail/_fixes.hpp

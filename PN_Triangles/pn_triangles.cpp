@@ -12,7 +12,6 @@
 #include <vector>
 #include <common/objloader.hpp>
 #include <common/vboindexer.hpp>
-#include <common/shader.hpp>
 
 using namespace glm;
 using namespace std;
@@ -28,7 +27,7 @@ typedef struct Vertex {
         Position[0] = coords[0];
         Position[1] = coords[1];
         Position[2] = coords[2];
-        Position[3] = coords[3];
+        Position[3] = 1.0;
     }
 
     void SetColor(float *color) {
@@ -141,7 +140,7 @@ void createObjects() {
     createVAOs(suzanne_verts, suzanne_idcs, 1);
 }
 
-void loadObject(char* file, glm::vec4 color, Vertex* &out_vertices, GLushort* &out_indices, int objectID) {
+void loadObject(char* file, glm::vec4 color, Vertex * &out_vertices, GLushort * &out_indices, int objectID) {
     vector<glm::vec3> vertices;
     vector<glm::vec3> normals;
 
@@ -250,7 +249,7 @@ void renderScene() {
         glDrawArrays(GL_LINES, 0, 6);
 
         glBindVertexArray(vertexArrayID[1]);
-        glDrawElements(GL_TRIANGLES, numIndices[1], GL_UNSIGNED_SHORT, (GLvoid*)0);
+        glDrawElements(GL_TRIANGLES, numIndices[1], GL_UNSIGNED_SHORT, (void*)0);
 
         glBindVertexArray(0);
     }

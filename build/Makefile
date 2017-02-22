@@ -650,33 +650,6 @@ common/objloader.cpp.s:
 	$(MAKE) -f CMakeFiles/PN_Triangles.dir/build.make CMakeFiles/PN_Triangles.dir/common/objloader.cpp.s
 .PHONY : common/objloader.cpp.s
 
-common/shader.o: common/shader.cpp.o
-
-.PHONY : common/shader.o
-
-# target to build an object file
-common/shader.cpp.o:
-	$(MAKE) -f CMakeFiles/PN_Triangles.dir/build.make CMakeFiles/PN_Triangles.dir/common/shader.cpp.o
-.PHONY : common/shader.cpp.o
-
-common/shader.i: common/shader.cpp.i
-
-.PHONY : common/shader.i
-
-# target to preprocess a source file
-common/shader.cpp.i:
-	$(MAKE) -f CMakeFiles/PN_Triangles.dir/build.make CMakeFiles/PN_Triangles.dir/common/shader.cpp.i
-.PHONY : common/shader.cpp.i
-
-common/shader.s: common/shader.cpp.s
-
-.PHONY : common/shader.s
-
-# target to generate assembly for a file
-common/shader.cpp.s:
-	$(MAKE) -f CMakeFiles/PN_Triangles.dir/build.make CMakeFiles/PN_Triangles.dir/common/shader.cpp.s
-.PHONY : common/shader.cpp.s
-
 common/vboindexer.o: common/vboindexer.cpp.o
 
 .PHONY : common/vboindexer.o
@@ -756,9 +729,6 @@ help:
 	@echo "... common/objloader.o"
 	@echo "... common/objloader.i"
 	@echo "... common/objloader.s"
-	@echo "... common/shader.o"
-	@echo "... common/shader.i"
-	@echo "... common/shader.s"
 	@echo "... common/vboindexer.o"
 	@echo "... common/vboindexer.i"
 	@echo "... common/vboindexer.s"

@@ -8,8 +8,6 @@
 
 .././common/objloader.hpp
 
-.././common/shader.hpp
-
 .././common/vboindexer.hpp
 
 ../external/glew-1.13.0/include/GL/glew.h
@@ -777,8 +775,6 @@ common/objloader.hpp
 -
 common/vboindexer.hpp
 -
-common/shader.hpp
--
 
 /data/Workspace/openGL-Tessellation/common/objloader.cpp
 vector
@@ -795,30 +791,6 @@ objloader.hpp
 /data/Workspace/openGL-Tessellation/common/objloader.hpp
 
 /data/Workspace/openGL-Tessellation/common/objloader.hpp
-
-/data/Workspace/openGL-Tessellation/common/shader.cpp
-stdio.h
--
-string
--
-vector
--
-iostream
--
-fstream
--
-algorithm
--
-stdlib.h
--
-string.h
--
-GL/glew.h
--
-shader.hpp
-/data/Workspace/openGL-Tessellation/common/shader.hpp
-
-/data/Workspace/openGL-Tessellation/common/shader.hpp
 
 /data/Workspace/openGL-Tessellation/common/vboindexer.cpp
 vector
