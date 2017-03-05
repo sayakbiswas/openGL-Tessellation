@@ -108,9 +108,9 @@ void initOpenGL() {
                               glm::vec3(0.0f, 10.0f, 0.0f),
                               glm::vec3(0.0f, 1.0f, 0.0f));
 
-    /*programID = loadTessShaders("shaders/Tessellation.vert", "shaders/Tessellation.control", "shaders/Tessellation.eval",
-                                "shaders/Tessellation.frag");*/
-    programID = loadStandardShaders("shaders/Standard.vert", "shaders/Standard.frag");
+    programID = loadTessShaders("shaders/Tessellation.vs.glsl", "shaders/Tessellation.tc.glsl", "shaders/Tessellation.te.glsl",
+                                "shaders/Tessellation.fs.glsl");
+    //programID = loadStandardShaders("shaders/Standard.vert", "shaders/Standard.frag");
 
     matrixID = glGetUniformLocation(programID, "MVP");
     modelMatrixID = glGetUniformLocation(programID, "M");
@@ -344,8 +344,145 @@ GLuint loadStandardShaders(const char *vert_file_path, const char *frag_file_pat
 }
 
 GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_file_path, const char *tess_eval_file_path,
-                              const char *tess_frag_file_path) {
+	const char *tess_frag_file_path) {
+	GLuint tessVertShaderID = glCreateShader(GL_VERTEX_SHADER);
+	GLuint tessCtrlShaderID = glCreateShader(GL_TESS_CONTROL_SHADER);
+	GLuint tessEvalShaderID = glCreateShader(GL_TESS_EVALUATION_SHADER);
+	GLuint tessFragShaderID = glCreateShader(GL_FRAGMENT_SHADER);
 
+	string tessVertexShaderCode;
+	ifstream tessVertexShaderStream(tess_vert_file_path, std::ios::in);
+	if(tessVertexShaderStream.is_open()) {
+		string line = "";
+		while(std::getline(tessVertexShaderStream, line)) {
+			tessVertexShaderCode += "\n" + line;
+		}
+		tessVertexShaderCode.close();
+	} else {
+		printf("Impossible to open %s.\n", tess_vert_file_path);
+		getchar();
+		return 0;
+	}
+
+	string tessCtrlShaderCode;
+	ifstream tessCtrlShaderStream(tess_ctrl_file_path, std::ios::in);
+	if(tessCtrlShaderStream.is_open()) {
+		string line = "";
+		while(std::getline(tessCtrlShaderStream, line)) {
+			tessCtrlShaderCode += "\n" + line;
+		}
+		tessCtrlShaderStream.close();
+	} else {
+		printf("Impossible to open %s\n", tess_ctrl_file_path);
+		getchar();
+		return 0;
+	}
+
+	string tessEvalShaderCode;
+	ifstream tessEvalShaderStream(tess_eval_file_path, std::ios::in);
+	if(tessEvalShaderStream.is_open()) {
+		string line = "";
+		while(std::getline(tessEvalShaderStream, line)) {
+			tessEvalShaderCode += "\n" + line;
+		}
+		tessEvalShaderStream.close();
+	} else {
+		printf("Impossible to open %s.\n", tess_eval_file_path, std::ios::in);
+		getchar();
+		return 0;
+	}
+
+	string tessFragShaderCode;
+	ifstream tessFragShaderStream(tess_frag_file_path, std::ios::in);
+	if(tessFragShaderStream.is_open()) {
+		while(std::getline(tessFragShaderStream, line)) {
+			tessFragShaderCode += "\n" + line;
+		}
+		tessFragShaderStream.close();
+	} else {
+		printf("Impossible to open %s.\n", tess_frag_file_path);
+		getchar();
+		return 0;
+	}
+
+	GLint result = false;
+	int infoLogLength;
+
+	printf("Compiling shader: %s\n", tess_vert_file_path);
+	char const* tessVertSourcePointer = tessVertexShaderCode.c_str();
+	glShaderSource(tessVertShaderID, 1, &tessVertSourcePointer, NULL);
+	glCompileShader(tessVertShaderID);
+	glGetShaderiv(tessVertShaderID, GL_COMPILE_STATUS, &result);
+	glGetShaderiv(tessVertShaderID, GL_INFO_LOG_LENGTH, &infoLogLength);
+	if(infoLogLength > 0) {
+		std::vector<char> tessVertShaderErrMsg(infoLogLength + 1);
+		glGetShaderInfoLog(tessVertShaderID, infoLogLength, NULL, &tessVertShaderErrMsg[0]);
+		printf("%s\n", &tessVertShaderErrMsg[0]);
+	}
+
+	printf("Compiling shader: %s\n", tess_ctrl_file_path);
+	char const* tessCtrlSourcePointer = tessCtrlShaderCode.c_str();
+	glShaderSource(tessCtrlShaderID, 1, &tessCtrlSourcePointer, NULL);
+	glCompileShader(tessCtrlShaderID);
+	glGetShaderiv(tessCtrlShaderID, GL_COMPILE_STATUS, &result);
+	glGetShaderiv(tessCtrlShaderID, GL_INFO_LOG_LENGTH, &infoLogLength);
+	if(infoLogLength > 0) {
+		std::vector<char> tessCtrlShaderErrMsg(infoLogLength + 1);
+		glGetShaderInfoLog(tessCtrlShaderID, infoLogLength, NULL, &tessCtrlShaderErrMsg[0]);
+		printf("%s\n", &tessCtrlShaderErrMsg[0]);
+	}
+
+	printf("Compiling shader: %s\n", tess_eval_file_path);
+	char const* tessEvalSourcePointer = tessEvalShaderCode.c_str();
+	glShaderSource(tessEvalShaderID, 1, &tessEvalSourcePointer, NULL);
+	glCompileShader(tessEvalShaderID);
+	glGetShaderiv(tessEvalShaderID, GL_COMPILE_STATUS, &result);
+	glGetShaderiv(tessEvalShaderID, GL_INFO_LOG_LENGTH, &infoLogLength);
+	if(infoLogLength > 0) {
+		std::vector<char> tessEvalShaderErrMsg(infoLogLength + 1);
+		glGetShaderInfoLog(tessEvalShaderID, infoLogLength, NULL, &tessEvalShaderErrMsg[0]);
+		printf("%s\n", &tessEvalShaderErrMsg[0]);
+	}
+
+	printf("Compiling shader: %s\n", tess_frag_file_path);
+	char const* tessFragSourcePointer = tessFragShaderCode.c_str();
+	glShaderSource(tessFragShaderID, 1, &tessFragSourcePointer, NULL);
+	glCompileShader(tessFragShaderID);
+	glGetShaderiv(tessFragShaderID, GL_COMPILE_STATUS, &result);
+	glGetShaderiv(tessFragShaderID, GL_INFO_LOG_LENGTH, &infoLogLength);
+	if(infoLogLength > 0) {
+		std::vector<char> tessFragShaderErrMsg(infoLogLength + 1);
+		glGetShaderInfoLog(tessFragShaderID, infoLogLength, NULL, &tessFragShaderErrMsg[0]);
+		printf("%s\n", &tessFragShaderErrMsg[0]);
+	}
+
+	printf("Linking Program\n");
+	GLuint tessProgramID = glCreateProgram();
+	glAttachShader(tessProgramID, tessVertShaderID);
+	glAttachShader(tessProgramID, tessCtrlShaderID);
+	glAttachShader(tessProgramID, tessEvalShaderID);
+	glAttachShader(tessProgramID, tessFragShaderID);
+	glLinkProgram(tessProgramID);
+
+	glGetProgramiv(tessProgramID, GL_LINK_STATUS, &result);
+	glGetProgramiv(tessProgramID, GL_INFO_LOG_LENGTH, &infoLogLength);
+	if(infoLogLength > 0) {
+		std::vector<char> tessProgramErrMsg(infoLogLength + 1);
+		glGetProgramInfoLog(tessProgramID, infoLogLength, NULL, &tessProgramErrMsg[0]);
+		printf("%s\n", &tessProgramErrMsg[0]);
+	}
+
+	glDetachShader(tessProgramID, tessVertShaderID);
+	glDetachShader(tessProgramID, tessCtrlShaderID);
+	glDetachShader(tessProgramID, tessEvalShaderID);
+	glDetachShader(tessProgramID, tessFragShaderID);
+
+	glDeleteShader(tessVertShaderID);
+	glDeleteShader(tessCtrlShaderID);
+	glDeleteShader(tessEvalShaderID);
+	glDeleteShader(tessFragShaderID);
+
+	return tessProgramID;
 }
 
 int initWindow() {

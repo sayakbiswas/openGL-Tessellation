@@ -15,7 +15,7 @@ include_directories(
 	external/glew-1.13.0/include/
 	external/assimp-3.0.1270/include/
 	external/bullet-2.81-rev2613/src/
-        common/
+	common/
 	.
 )
 
@@ -40,11 +40,15 @@ file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/Model/Suzanne.mtl DESTINATION Model/)
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/PN_Triangles/shaders/Standard.vert DESTINATION shaders/)
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/PN_Triangles/shaders/Standard.frag DESTINATION shaders/)
 add_executable(PN_Triangles
-        PN_Triangles/pn_triangles.cpp
-        common/objloader.cpp
-        common/vboindexer.cpp
-        PN_Triangles/shaders/Standard.vert
-        PN_Triangles/shaders/Standard.frag
+	PN_Triangles/pn_triangles.cpp
+	common/objloader.cpp
+	common/vboindexer.cpp
+	PN_Triangles/shaders/Standard.vert
+	PN_Triangles/shaders/Standard.frag
+	PN_Triangles/shaders/Tessellation.vert
+	PN_Triangles/shaders/Tessellation.tesc
+	PN_Triangles/shaders/Tessellation.tese
+	PN_Triangles/shaders/Tessellation.frag
 )
 
 target_link_libraries(PN_Triangles
