@@ -18,8 +18,8 @@ out vec3 color;
 uniform vec3 lightPosition_worldspace;
 
 void main() {
-    vec3 lightColor = vec3(1, 1, 1);
-    float lightPower = 200.0f;
+    vec3 lightColor = vec3(1, 1, 0.5);
+    float lightPower = 600.0f;
 
     vec3 materialDiffuseColor = vdata.color.rgb;
     vec3 materialAmbientColor = vec3(0.3, 0.3, 0.3) * materialDiffuseColor;

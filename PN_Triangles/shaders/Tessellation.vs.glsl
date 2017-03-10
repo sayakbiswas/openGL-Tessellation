@@ -13,6 +13,10 @@ layout(location = 2) in vec3 vertexNormal_modelspace;
 
 out V2T vdata;
 
+uniform mat4 M;
+uniform mat4 V;
+uniform mat4 P;
+
 void main() {
     vdata.position = (vertexPosition_modelspace).xyz;
     vdata.normal = normalize(vertexNormal_modelspace);
