@@ -1,4 +1,4 @@
-# Install script for directory: /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/src
+# Install script for directory: /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,6 +33,6 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/src/libglfw3.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/src/libglfw3.a")
 endif()
 

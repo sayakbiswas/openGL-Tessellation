@@ -46,6 +46,7 @@ typedef struct Vertex {
 glm::mat4 gProjectionMatrix;
 glm::mat4 gViewMatrix;
 GLuint programID;
+GLuint tessProgramID;
 const GLuint numObjects = 256;
 GLuint vertexBufferID[numObjects] = {0};
 GLuint vertexArrayID[numObjects] = {0};
@@ -60,6 +61,13 @@ GLuint modelMatrixID;
 GLuint viewMatrixID;
 GLuint projectionMatrixID;
 GLuint lightID;
+GLuint tessMatrixID;
+GLuint tessModelMatrixID;
+GLuint tessViewMatrixID;
+GLuint tessProjectionMatrixID;
+GLuint tessLightID;
+GLfloat tessellationLevelInnerID;
+GLfloat tessellationLevelOuterID;
 GLfloat cameraAngleTheta = 3.142 / 4;
 GLfloat cameraAnglePhi = asin(1 / sqrt(3));
 GLfloat cameraSphereRadius = sqrt(675);
@@ -67,6 +75,9 @@ bool moveCameraLeft = false;
 bool moveCameraRight = false;
 bool moveCameraUp = false;
 bool moveCameraDown = false;
+float tessellationLevel = 1.0f;
+bool shouldTessellateModel = false;
+bool shouldDisplayWireframeMode = false;
 
 int initWindow(void);
 void initOpenGL(void);
@@ -108,15 +119,22 @@ void initOpenGL() {
                               glm::vec3(0.0f, 10.0f, 0.0f),
                               glm::vec3(0.0f, 1.0f, 0.0f));
 
-    programID = loadTessShaders("shaders/Tessellation.vs.glsl", "shaders/Tessellation.tc.glsl", "shaders/Tessellation.te.glsl",
+    programID = loadStandardShaders("shaders/Standard.vert", "shaders/Standard.frag");
+    tessProgramID = loadTessShaders("shaders/Tessellation.vs.glsl", "shaders/Tessellation.tc.glsl", "shaders/Tessellation.te.glsl",
                                 "shaders/Tessellation.fs.glsl");
-    //programID = loadStandardShaders("shaders/Standard.vert", "shaders/Standard.frag");
 
     matrixID = glGetUniformLocation(programID, "MVP");
     modelMatrixID = glGetUniformLocation(programID, "M");
     viewMatrixID = glGetUniformLocation(programID, "V");
     projectionMatrixID = glGetUniformLocation(programID, "P");
     lightID = glGetUniformLocation(programID, "lightPosition_worldspace");
+
+    tessModelMatrixID = glGetUniformLocation(tessProgramID, "M");
+    tessViewMatrixID = glGetUniformLocation(tessProgramID, "V");
+    tessProjectionMatrixID = glGetUniformLocation(tessProgramID, "P");
+    tessLightID = glGetUniformLocation(tessProgramID, "lightPosition_worldspace");
+    tessellationLevelInnerID = glGetUniformLocation(tessProgramID, "tessellationLevelInner");
+    tessellationLevelOuterID = glGetUniformLocation(tessProgramID, "tessellationLevelOuter");
 
     createObjects();
 }
@@ -136,8 +154,25 @@ void createObjects() {
     vertexBufferSize[0] = sizeof(coordVerts);	// ATTN: this needs to be done for each hand-made object with the ObjectID (subscript)
     createVAOs(coordVerts, NULL, 0);
 
-    loadObject("Model/Suzanne.obj", glm::vec4(1.0, 1.0, 1.0, 1.0), suzanne_verts, suzanne_idcs, 1);
+    loadObject("Model/Suzanne.obj", glm::vec4(0.4, 0.5, 0.3, 1.0), suzanne_verts, suzanne_idcs, 1);
     createVAOs(suzanne_verts, suzanne_idcs, 1);
+
+    /*Vertex triVerts[] =
+    {
+      {{3.0, -2.0, -1.0, 1.0}, {1.0, 1.0, 0.0, 1.0}, {0.0, 0.0, 1.0}},
+      {{-3.0, -2.0, -1.0, 1.0}, {1.0, 1.0, 0.0, 1.0}, {0.0, 0.0, 1.0}},
+      {{0.0, 3.0, -1.0, 1.0}, {1.0, 1.0, 0.0, 1.0}, {0.0, 0.0, 1.0}}
+    };
+
+    GLushort triIdcs[] =
+    {
+        0, 1, 2
+    };
+
+    vertexBufferSize[2] = sizeof(triVerts);
+    numIndices[2] = 3;
+    indexBufferSize[2] = sizeof(triIdcs);
+    createVAOs(triVerts, triIdcs, 2);*/
 }
 
 void loadObject(char* file, glm::vec4 color, Vertex * &out_vertices, GLushort * &out_indices, int objectID) {
@@ -236,10 +271,15 @@ void renderScene() {
             glm::vec3(0.0, 1.0, 0.0));	// up
     }
 
+    if(shouldDisplayWireframeMode) {
+        glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
+    } else {
+        glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+    }
+    glm::vec3 lightPos = glm::vec3(20.0f, 20.0f, 20.0f);
+    glm::mat4x4 modelMatrix = glm::mat4(1.0);
     glUseProgram(programID);
     {
-        glm::vec3 lightPos = glm::vec3(10.0f, 10.0f, 10.0f);
-        glm::mat4x4 modelMatrix = glm::mat4(1.0);
         glUniform3f(lightID, lightPos.x, lightPos.y, lightPos.z);
         glUniformMatrix4fv(viewMatrixID, 1, GL_FALSE, &gViewMatrix[0][0]);
         glUniformMatrix4fv(projectionMatrixID, 1, GL_FALSE, &gProjectionMatrix[0][0]);
@@ -248,10 +288,39 @@ void renderScene() {
         glBindVertexArray(vertexArrayID[0]);	// draw CoordAxes
         glDrawArrays(GL_LINES, 0, 6);
 
-        glBindVertexArray(vertexArrayID[1]);
-        glDrawElements(GL_TRIANGLES, numIndices[1], GL_UNSIGNED_SHORT, (void*)0);
+        if(!shouldTessellateModel) {
+            glBindVertexArray(vertexArrayID[1]);
+            glDrawElements(GL_TRIANGLES, numIndices[1], GL_UNSIGNED_SHORT, (void*)0);
+
+            /*glBindVertexArray(vertexArrayID[2]);
+            glPolygonMode(GL_FRONT_AND_BACK,GL_LINE);
+            glDrawElements(GL_TRIANGLES, numIndices[2], GL_UNSIGNED_SHORT, (void*)0);*/
+        }
 
         glBindVertexArray(0);
+    }
+
+    if(shouldTessellateModel) {
+        glUseProgram(tessProgramID);
+        {
+            glUniform3f(tessLightID, lightPos.x, lightPos.y, lightPos.z);
+            glUniformMatrix4fv(tessViewMatrixID, 1, GL_FALSE, &gViewMatrix[0][0]);
+            glUniformMatrix4fv(tessProjectionMatrixID, 1, GL_FALSE, &gProjectionMatrix[0][0]);
+            glUniformMatrix4fv(tessModelMatrixID, 1, GL_FALSE, &modelMatrix[0][0]);
+
+            glUniform1f(tessellationLevelInnerID, tessellationLevel);
+            glUniform1f(tessellationLevelOuterID, tessellationLevel);
+
+            glPatchParameteri(GL_PATCH_VERTICES, 3);
+            glBindVertexArray(vertexArrayID[1]);
+            glDrawElements(GL_PATCHES, numIndices[1], GL_UNSIGNED_SHORT, (void*)0);
+
+            /*glPatchParameteri(GL_PATCH_VERTICES, 3);
+            glBindVertexArray(vertexArrayID[2]);
+            glDrawElements(GL_PATCHES, numIndices[2], GL_UNSIGNED_SHORT, (void*)0);*/
+
+            glBindVertexArray(0);
+        }
     }
 
     glUseProgram(0);
@@ -357,7 +426,7 @@ GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_fi
 		while(std::getline(tessVertexShaderStream, line)) {
 			tessVertexShaderCode += "\n" + line;
 		}
-		tessVertexShaderCode.close();
+        tessVertexShaderStream.close();
 	} else {
 		printf("Impossible to open %s.\n", tess_vert_file_path);
 		getchar();
@@ -387,7 +456,7 @@ GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_fi
 		}
 		tessEvalShaderStream.close();
 	} else {
-		printf("Impossible to open %s.\n", tess_eval_file_path, std::ios::in);
+        printf("Impossible to open %s.\n", tess_eval_file_path);
 		getchar();
 		return 0;
 	}
@@ -395,6 +464,7 @@ GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_fi
 	string tessFragShaderCode;
 	ifstream tessFragShaderStream(tess_frag_file_path, std::ios::in);
 	if(tessFragShaderStream.is_open()) {
+        string line = "";
 		while(std::getline(tessFragShaderStream, line)) {
 			tessFragShaderCode += "\n" + line;
 		}
@@ -456,7 +526,7 @@ GLuint loadTessShaders(const char *tess_vert_file_path, const char *tess_ctrl_fi
 		printf("%s\n", &tessFragShaderErrMsg[0]);
 	}
 
-	printf("Linking Program\n");
+    printf("Linking Shader\n");
 	GLuint tessProgramID = glCreateProgram();
 	glAttachShader(tessProgramID, tessVertShaderID);
 	glAttachShader(tessProgramID, tessCtrlShaderID);
@@ -559,6 +629,23 @@ static void keyCallback(GLFWwindow *window, int key, int scancode, int action, i
             break;
         case GLFW_KEY_DOWN:
             moveCameraDown = false;
+            break;
+        case GLFW_KEY_T:
+            shouldTessellateModel = !shouldTessellateModel;
+            tessellationLevel = 1.0f;
+            break;
+        case GLFW_KEY_W:
+            shouldDisplayWireframeMode = ! shouldDisplayWireframeMode;
+            break;
+        case GLFW_KEY_LEFT_BRACKET:
+            if(shouldTessellateModel) {
+                --tessellationLevel;
+            }
+            break;
+        case GLFW_KEY_RIGHT_BRACKET:
+            if(shouldTessellateModel) {
+                ++tessellationLevel;
+            }
             break;
         default:
             break;

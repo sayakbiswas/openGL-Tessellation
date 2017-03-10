@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o"
-  "/data/Workspace/openGL-Tessellation/common/objloader.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o"
-  "/data/Workspace/openGL-Tessellation/common/vboindexer.cpp" "/data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o"
+  "/home/sayak/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp" "/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o"
+  "/home/sayak/Workspace/openGL-Tessellation/common/objloader.cpp" "/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o"
+  "/home/sayak/Workspace/openGL-Tessellation/common/vboindexer.cpp" "/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -33,8 +33,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
-  "/data/Workspace/openGL-Tessellation/build/external/CMakeFiles/GLEW_1130.dir/DependInfo.cmake"
+  "/home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/DependInfo.cmake"
+  "/home/sayak/Workspace/openGL-Tessellation/build/external/CMakeFiles/GLEW_1130.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

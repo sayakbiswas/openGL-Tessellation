@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/Workspace/openGL-Tessellation
+CMAKE_SOURCE_DIR = /home/sayak/Workspace/openGL-Tessellation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
+CMAKE_BINARY_DIR = /home/sayak/Workspace/openGL-Tessellation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/Workspace/openGL-Tessellation/build/CMakeFiles /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/CMakeFiles/progress.marks
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/Workspace/openGL-Tessellation/build/CMakeFiles 0
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/CMakeFiles/progress.marks
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/clean
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/preinstall
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/preinstall
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
 .PHONY : external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
 
 # Convenience name for target.
@@ -166,7 +166,7 @@ uninstall: external/glfw-3.1.2/CMakeFiles/uninstall.dir/rule
 
 # fast build rule for target.
 uninstall/fast:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make external/glfw-3.1.2/CMakeFiles/uninstall.dir/build
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make external/glfw-3.1.2/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
 # Help Target
@@ -193,6 +193,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

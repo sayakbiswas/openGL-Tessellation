@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/Workspace/openGL-Tessellation
+CMAKE_SOURCE_DIR = /home/sayak/Workspace/openGL-Tessellation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
+CMAKE_BINARY_DIR = /home/sayak/Workspace/openGL-Tessellation/build
 
 # Include any dependencies generated for this target.
 include external/glfw-3.1.2/tests/CMakeFiles/empty.dir/depend.make
@@ -59,16 +59,16 @@ include external/glfw-3.1.2/tests/CMakeFiles/empty.dir/flags.make
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.o: external/glfw-3.1.2/tests/CMakeFiles/empty.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.o: ../external/glfw-3.1.2/tests/empty.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.o"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/empty.c.o   -c /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests/empty.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.o"
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/empty.c.o   -c /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests/empty.c
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/empty.dir/empty.c.i"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests/empty.c > CMakeFiles/empty.dir/empty.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests/empty.c > CMakeFiles/empty.dir/empty.c.i
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/empty.dir/empty.c.s"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests/empty.c -o CMakeFiles/empty.dir/empty.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests/empty.c -o CMakeFiles/empty.dir/empty.c.s
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.o.requires:
 
@@ -83,16 +83,16 @@ external/glfw-3.1.2/tests/CMakeFiles/empty.dir/empty.c.o.provides.build: externa
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: external/glfw-3.1.2/tests/CMakeFiles/empty.dir/flags.make
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o: ../external/glfw-3.1.2/deps/tinycthread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o   -c /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/tinycthread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o"
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/empty.dir/__/deps/tinycthread.c.o   -c /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/tinycthread.c
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/empty.dir/__/deps/tinycthread.c.i"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/tinycthread.c > CMakeFiles/empty.dir/__/deps/tinycthread.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/tinycthread.c > CMakeFiles/empty.dir/__/deps/tinycthread.c.i
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/empty.dir/__/deps/tinycthread.c.s"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/tinycthread.c -o CMakeFiles/empty.dir/__/deps/tinycthread.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/tinycthread.c -o CMakeFiles/empty.dir/__/deps/tinycthread.c.s
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/__/deps/tinycthread.c.o.requires:
 
@@ -136,8 +136,8 @@ external/glfw-3.1.2/tests/empty: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 external/glfw-3.1.2/tests/empty: /usr/lib/x86_64-linux-gnu/libXcursor.so
 external/glfw-3.1.2/tests/empty: /usr/lib/x86_64-linux-gnu/libGL.so
 external/glfw-3.1.2/tests/empty: external/glfw-3.1.2/tests/CMakeFiles/empty.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable empty"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/empty.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable empty"
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/empty.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build: external/glfw-3.1.2/tests/empty
@@ -150,10 +150,10 @@ external/glfw-3.1.2/tests/CMakeFiles/empty.dir/requires: external/glfw-3.1.2/tes
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/empty.dir/requires
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/clean:
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && $(CMAKE_COMMAND) -P CMakeFiles/empty.dir/cmake_clean.cmake
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests && $(CMAKE_COMMAND) -P CMakeFiles/empty.dir/cmake_clean.cmake
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/empty.dir/clean
 
 external/glfw-3.1.2/tests/CMakeFiles/empty.dir/depend:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/Workspace/openGL-Tessellation /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests /data/Workspace/openGL-Tessellation/build /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sayak/Workspace/openGL-Tessellation /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/tests /home/sayak/Workspace/openGL-Tessellation/build /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.1.2/tests/CMakeFiles/empty.dir/depend
 

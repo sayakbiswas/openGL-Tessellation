@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/Workspace/openGL-Tessellation
+CMAKE_SOURCE_DIR = /home/sayak/Workspace/openGL-Tessellation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
+CMAKE_BINARY_DIR = /home/sayak/Workspace/openGL-Tessellation/build
 
 # Include any dependencies generated for this target.
 include external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/depend.make
@@ -59,16 +59,16 @@ include external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/flags.make
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.o: external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/flags.make
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.o: ../external/glfw-3.1.2/examples/heightmap.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.o"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/heightmap.c.o   -c /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples/heightmap.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.o"
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/heightmap.c.o   -c /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples/heightmap.c
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/heightmap.dir/heightmap.c.i"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples/heightmap.c > CMakeFiles/heightmap.dir/heightmap.c.i
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/heightmap.dir/heightmap.c.s"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples/heightmap.c -o CMakeFiles/heightmap.dir/heightmap.c.s
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.o.requires:
 
@@ -83,16 +83,16 @@ external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/heightmap.c.o.provides.bui
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o: external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/flags.make
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o: ../external/glfw-3.1.2/deps/glad.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/__/deps/glad.c.o   -c /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/glad.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o"
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/heightmap.dir/__/deps/glad.c.o   -c /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/glad.c
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/heightmap.dir/__/deps/glad.c.i"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/glad.c > CMakeFiles/heightmap.dir/__/deps/glad.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/glad.c > CMakeFiles/heightmap.dir/__/deps/glad.c.i
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/heightmap.dir/__/deps/glad.c.s"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/glad.c -o CMakeFiles/heightmap.dir/__/deps/glad.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && /usr/bin/cc  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/deps/glad.c -o CMakeFiles/heightmap.dir/__/deps/glad.c.s
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/__/deps/glad.c.o.requires:
 
@@ -127,8 +127,8 @@ external/glfw-3.1.2/examples/heightmap: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 external/glfw-3.1.2/examples/heightmap: /usr/lib/x86_64-linux-gnu/libXcursor.so
 external/glfw-3.1.2/examples/heightmap: /usr/lib/x86_64-linux-gnu/libGL.so
 external/glfw-3.1.2/examples/heightmap: external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap"
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable heightmap"
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/heightmap.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build: external/glfw-3.1.2/examples/heightmap
@@ -141,10 +141,10 @@ external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/requires: external/glfw-3.
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/requires
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/clean:
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples && $(CMAKE_COMMAND) -P CMakeFiles/heightmap.dir/cmake_clean.cmake
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/clean
 
 external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/depend:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/Workspace/openGL-Tessellation /data/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples /data/Workspace/openGL-Tessellation/build /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sayak/Workspace/openGL-Tessellation /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2/examples /home/sayak/Workspace/openGL-Tessellation/build /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/depend
 

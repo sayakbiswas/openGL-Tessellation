@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" buildAllGenerated="true">
+    <generated>
+      <config projectName="openGL-Tessellation" targetName="splitview" />
+      <config projectName="openGL-Tessellation" targetName="assimp" />
+      <config projectName="openGL-Tessellation" targetName="glfwinfo" />
+      <config projectName="openGL-Tessellation" targetName="uninstall" />
+      <config projectName="openGL-Tessellation" targetName="cursor" />
+      <config projectName="openGL-Tessellation" targetName="glfw" />
+      <config projectName="openGL-Tessellation" targetName="gears" />
+      <config projectName="openGL-Tessellation" targetName="clipboard" />
+      <config projectName="openGL-Tessellation" targetName="boing" />
+      <config projectName="openGL-Tessellation" targetName="BulletSoftBody" />
+      <config projectName="openGL-Tessellation" targetName="wave" />
+      <config projectName="openGL-Tessellation" targetName="empty" />
+      <config projectName="openGL-Tessellation" targetName="zlib" />
+      <config projectName="openGL-Tessellation" targetName="title" />
+      <config projectName="openGL-Tessellation" targetName="simple" />
+      <config projectName="openGL-Tessellation" targetName="ANTTWEAKBAR_116_OGLCORE_GLFW" />
+      <config projectName="openGL-Tessellation" targetName="heightmap" />
+      <config projectName="openGL-Tessellation" targetName="BulletCollision" />
+      <config projectName="openGL-Tessellation" targetName="LinearMath" />
+      <config projectName="openGL-Tessellation" targetName="events" />
+      <config projectName="openGL-Tessellation" targetName="sharing" />
+      <config projectName="openGL-Tessellation" targetName="windows" />
+      <config projectName="openGL-Tessellation" targetName="msaa" />
+      <config projectName="openGL-Tessellation" targetName="PN_Triangles" />
+      <config projectName="openGL-Tessellation" targetName="tearing" />
+      <config projectName="openGL-Tessellation" targetName="BulletDynamics" />
+      <config projectName="openGL-Tessellation" targetName="reopen" />
+      <config projectName="openGL-Tessellation" targetName="iconify" />
+      <config projectName="openGL-Tessellation" targetName="monitors" />
+      <config projectName="openGL-Tessellation" targetName="threads" />
+      <config projectName="openGL-Tessellation" targetName="gamma" />
+      <config projectName="openGL-Tessellation" targetName="GLEW_1130" />
+      <config projectName="openGL-Tessellation" targetName="particles" />
+      <config projectName="openGL-Tessellation" targetName="joysticks" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3915d247-4898-4ce1-a79a-c317371b9c07" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/tessellationPNTriangle_new.glsl" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/PN_Triangles" afterPath="$PROJECT_DIR$/build/PN_Triangles" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CMakeLists.txt.user" afterPath="$PROJECT_DIR$/CMakeLists.txt.user" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/pn_triangles.cpp" afterPath="$PROJECT_DIR$/PN_Triangles/pn_triangles.cpp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/Standard.frag" afterPath="$PROJECT_DIR$/PN_Triangles/shaders/Standard.frag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/Standard.vert" afterPath="$PROJECT_DIR$/PN_Triangles/shaders/Standard.vert" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.fs.glsl" afterPath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.fs.glsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.tc.glsl" afterPath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.tc.glsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.te.glsl" afterPath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.te.glsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.vs.glsl" afterPath="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.vs.glsl" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeCache.txt" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeRuleHashes.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/CXX.includecache" afterPath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/CXX.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/build.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/depend.internal" afterPath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/flags.make" afterPath="$PROJECT_DIR$/build/CMakeFiles/PN_Triangles.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/Makefile" afterPath="$PROJECT_DIR$/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/build.make" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/ANTTWEAKBAR_116_OGLCORE_GLFW.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/C.includecache" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/C.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/build.make" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/depend.internal" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/CMakeFiles/GLEW_1130.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/Makefile" afterPath="$PROJECT_DIR$/build/external/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/build.make" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/CMakeFiles/assimp.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/Makefile" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/code/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/Makefile" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/assimp-3.0.1270/contrib/zlib/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/build.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/BulletCollision.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/Makefile" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletCollision/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/BulletDynamics.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/Makefile" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletDynamics/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/BulletSoftBody.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/Makefile" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/BulletSoftBody/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/build.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/CMakeFiles/LinearMath.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/Makefile" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/bullet-2.81-rev2613/src/LinearMath/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/Makefile" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/cmake_uninstall.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/cmake_uninstall.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/docs/Doxyfile" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/docs/Doxyfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/boing.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/gears.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/heightmap.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/particles.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/simple.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/splitview.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/CMakeFiles/wave.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/Makefile" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/examples/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/C.includecache" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/C.includecache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/depend.internal" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/depend.internal" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/CMakeFiles/glfw.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/Makefile" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/src/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/clipboard.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/cursor.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/empty.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/events.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/events.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/events.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/events.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/events.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/events.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/gamma.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/glfwinfo.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/iconify.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/joysticks.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/monitors.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/msaa.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/reopen.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/sharing.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/tearing.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/threads.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/title.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/title.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/title.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/title.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/title.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/title.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/DependInfo.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/build.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/build.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/flags.make" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/CMakeFiles/windows.dir/flags.make" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/Makefile" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/cmake_install.cmake" afterPath="$PROJECT_DIR$/build/external/glfw-3.1.2/tests/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/openGL-Tessellation.cbp" afterPath="$PROJECT_DIR$/build/openGL-Tessellation.cbp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/shaders/Standard.frag" afterPath="$PROJECT_DIR$/build/shaders/Standard.frag" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/shaders/Standard.vert" afterPath="$PROJECT_DIR$/build/shaders/Standard.vert" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="openGL-Tessellation" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pn_triangles.cpp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/PN_Triangles/pn_triangles.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1918">
+              <caret line="150" column="76" lean-forward="true" selection-start-line="150" selection-start-column="76" selection-end-line="150" selection-end-column="76" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tessellation.fs.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.fs.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tessellation.tc.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.tc.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Tessellation.te.glsl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.te.glsl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.te.glsl" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="43" />
+    <option name="y" value="24" />
+    <option name="width" value="1323" />
+    <option name="height" value="744" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openGL-Tessellation" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openGL-Tessellation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openGL-Tessellation" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openGL-Tessellation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PN_Triangles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openGL-Tessellation" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.CidrFilesViewHelper$MyProjectTreeStructure$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="openGL-Tessellation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PN_Triangles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="shaders" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Console Font" />
+  </component>
+  <component name="RunManager" selected="Application.Build All">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="PN_Triangles" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="PN_Triangles" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="PN_Triangles" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="PN_Triangles">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="ANTTWEAKBAR_116_OGLCORE_GLFW" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="ANTTWEAKBAR_116_OGLCORE_GLFW" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="GLEW_1130" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="GLEW_1130" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="assimp" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="assimp" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="zlib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="zlib" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BulletCollision" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="BulletCollision" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BulletDynamics" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="BulletDynamics" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="BulletSoftBody" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="BulletSoftBody" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="LinearMath" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="LinearMath" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="uninstall" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="uninstall" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="boing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="boing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="boing">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gears" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="gears" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="gears">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="heightmap" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="heightmap" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="heightmap">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="particles" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="particles" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="particles">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="simple" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="simple" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="simple">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="splitview" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="splitview" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="splitview">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="wave" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="wave" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="wave">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="glfw" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="glfw" CONFIG_NAME="Debug">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="clipboard" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="clipboard" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="clipboard">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="cursor" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="cursor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="cursor">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="empty" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="empty" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="empty">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="events" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="events" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="events">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="gamma" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="gamma" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="gamma">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="glfwinfo" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="glfwinfo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="glfwinfo">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="iconify" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="iconify" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="iconify">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="joysticks" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="joysticks" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="joysticks">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="monitors" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="monitors" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="monitors">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="msaa" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="msaa" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="msaa">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="reopen" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="reopen" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="reopen">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="sharing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="sharing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="sharing">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="tearing" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="tearing" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="tearing">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="threads" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="threads" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="threads">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="title" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="title" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="title">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="windows" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="windows" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="windows">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Build All" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$/build" PASS_PARENT_ENVS_2="true" PROJECT_NAME="openGL-Tessellation" TARGET_NAME="PN_Triangles" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="openGL-Tessellation" RUN_TARGET_NAME="PN_Triangles">
+      <envs />
+      <method />
+    </configuration>
+    <list size="35">
+      <item index="0" class="java.lang.String" itemvalue="Application.PN_Triangles" />
+      <item index="1" class="java.lang.String" itemvalue="Application.ANTTWEAKBAR_116_OGLCORE_GLFW" />
+      <item index="2" class="java.lang.String" itemvalue="Application.GLEW_1130" />
+      <item index="3" class="java.lang.String" itemvalue="Application.assimp" />
+      <item index="4" class="java.lang.String" itemvalue="Application.zlib" />
+      <item index="5" class="java.lang.String" itemvalue="Application.BulletCollision" />
+      <item index="6" class="java.lang.String" itemvalue="Application.BulletDynamics" />
+      <item index="7" class="java.lang.String" itemvalue="Application.BulletSoftBody" />
+      <item index="8" class="java.lang.String" itemvalue="Application.LinearMath" />
+      <item index="9" class="java.lang.String" itemvalue="Application.uninstall" />
+      <item index="10" class="java.lang.String" itemvalue="Application.boing" />
+      <item index="11" class="java.lang.String" itemvalue="Application.gears" />
+      <item index="12" class="java.lang.String" itemvalue="Application.heightmap" />
+      <item index="13" class="java.lang.String" itemvalue="Application.particles" />
+      <item index="14" class="java.lang.String" itemvalue="Application.simple" />
+      <item index="15" class="java.lang.String" itemvalue="Application.splitview" />
+      <item index="16" class="java.lang.String" itemvalue="Application.wave" />
+      <item index="17" class="java.lang.String" itemvalue="Application.glfw" />
+      <item index="18" class="java.lang.String" itemvalue="Application.clipboard" />
+      <item index="19" class="java.lang.String" itemvalue="Application.cursor" />
+      <item index="20" class="java.lang.String" itemvalue="Application.empty" />
+      <item index="21" class="java.lang.String" itemvalue="Application.events" />
+      <item index="22" class="java.lang.String" itemvalue="Application.gamma" />
+      <item index="23" class="java.lang.String" itemvalue="Application.glfwinfo" />
+      <item index="24" class="java.lang.String" itemvalue="Application.iconify" />
+      <item index="25" class="java.lang.String" itemvalue="Application.joysticks" />
+      <item index="26" class="java.lang.String" itemvalue="Application.monitors" />
+      <item index="27" class="java.lang.String" itemvalue="Application.msaa" />
+      <item index="28" class="java.lang.String" itemvalue="Application.reopen" />
+      <item index="29" class="java.lang.String" itemvalue="Application.sharing" />
+      <item index="30" class="java.lang.String" itemvalue="Application.tearing" />
+      <item index="31" class="java.lang.String" itemvalue="Application.threads" />
+      <item index="32" class="java.lang.String" itemvalue="Application.title" />
+      <item index="33" class="java.lang.String" itemvalue="Application.windows" />
+      <item index="34" class="java.lang.String" itemvalue="Application.Build All" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3915d247-4898-4ce1-a79a-c317371b9c07" name="Default" comment="" />
+      <created>1488826434739</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1488826434739</updated>
+      <workItem from="1488826442044" duration="191000" />
+      <workItem from="1488826659962" duration="892000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1083000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="43" y="24" width="1323" height="744" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24565382" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288889" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/pn_triangles.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1246">
+          <caret line="89" column="23" lean-forward="true" selection-start-line="89" selection-start-column="23" selection-end-line="89" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.fs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Standard.vert">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.fs.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.tc.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/shaders/Tessellation.te.glsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PN_Triangles/pn_triangles.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1918">
+          <caret line="150" column="76" lean-forward="true" selection-start-line="150" selection-start-column="76" selection-end-line="150" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

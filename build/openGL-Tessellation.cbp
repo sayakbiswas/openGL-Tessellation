@@ -1651,6 +1651,18 @@
       <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Standard.vert">
          <Option target="PN_Triangles"/>
       </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Tessellation.fs.glsl">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Tessellation.tc.glsl">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Tessellation.te.glsl">
+         <Option target="PN_Triangles"/>
+      </Unit>
+      <Unit filename="/data/Workspace/openGL-Tessellation/PN_Triangles/shaders/Tessellation.vs.glsl">
+         <Option target="PN_Triangles"/>
+      </Unit>
       <Unit filename="/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/src/glfw_config.h">
          <Option target="glfw"/>
       </Unit>
@@ -1658,12 +1670,6 @@
          <Option target="PN_Triangles"/>
       </Unit>
       <Unit filename="/data/Workspace/openGL-Tessellation/common/objloader.hpp">
-         <Option target="PN_Triangles"/>
-      </Unit>
-      <Unit filename="/data/Workspace/openGL-Tessellation/common/shader.cpp">
-         <Option target="PN_Triangles"/>
-      </Unit>
-      <Unit filename="/data/Workspace/openGL-Tessellation/common/shader.hpp">
          <Option target="PN_Triangles"/>
       </Unit>
       <Unit filename="/data/Workspace/openGL-Tessellation/common/vboindexer.cpp">

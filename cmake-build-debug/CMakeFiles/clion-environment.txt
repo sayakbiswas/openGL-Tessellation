@@ -1,0 +1,1 @@
+CMake: 3.6.3@/home/sayak/.local/share/umake/ide/clion/bin/cmake/bin/cmake

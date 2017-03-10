@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/Workspace/openGL-Tessellation
+CMAKE_SOURCE_DIR = /home/sayak/Workspace/openGL-Tessellation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
+CMAKE_BINARY_DIR = /home/sayak/Workspace/openGL-Tessellation/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/PN_Triangles.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/PN_Triangles.dir/flags.make
 
 CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o: CMakeFiles/PN_Triangles.dir/flags.make
 CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o: ../PN_Triangles/pn_triangles.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o -c /data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o -c /home/sayak/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp
 
 CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp > CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp > CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.i
 
 CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp -o CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp -o CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.s
 
 CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o.provides.build: CMak
 
 CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o: CMakeFiles/PN_Triangles.dir/flags.make
 CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o: ../common/objloader.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o -c /data/Workspace/openGL-Tessellation/common/objloader.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o -c /home/sayak/Workspace/openGL-Tessellation/common/objloader.cpp
 
 CMakeFiles/PN_Triangles.dir/common/objloader.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PN_Triangles.dir/common/objloader.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/Workspace/openGL-Tessellation/common/objloader.cpp > CMakeFiles/PN_Triangles.dir/common/objloader.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/common/objloader.cpp > CMakeFiles/PN_Triangles.dir/common/objloader.cpp.i
 
 CMakeFiles/PN_Triangles.dir/common/objloader.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PN_Triangles.dir/common/objloader.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/Workspace/openGL-Tessellation/common/objloader.cpp -o CMakeFiles/PN_Triangles.dir/common/objloader.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/common/objloader.cpp -o CMakeFiles/PN_Triangles.dir/common/objloader.cpp.s
 
 CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o.provides.build: CMakeFiles/PN
 
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o: CMakeFiles/PN_Triangles.dir/flags.make
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o: ../common/vboindexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o -c /data/Workspace/openGL-Tessellation/common/vboindexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o -c /home/sayak/Workspace/openGL-Tessellation/common/vboindexer.cpp
 
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /data/Workspace/openGL-Tessellation/common/vboindexer.cpp > CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sayak/Workspace/openGL-Tessellation/common/vboindexer.cpp > CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.i
 
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /data/Workspace/openGL-Tessellation/common/vboindexer.cpp -o CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sayak/Workspace/openGL-Tessellation/common/vboindexer.cpp -o CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.s
 
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o.requires:
 
@@ -165,7 +165,7 @@ PN_Triangles: /usr/lib/x86_64-linux-gnu/libXxf86vm.so
 PN_Triangles: /usr/lib/x86_64-linux-gnu/libXcursor.so
 PN_Triangles: /usr/lib/x86_64-linux-gnu/libGL.so
 PN_Triangles: CMakeFiles/PN_Triangles.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/data/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PN_Triangles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable PN_Triangles"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PN_Triangles.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -184,6 +184,6 @@ CMakeFiles/PN_Triangles.dir/clean:
 .PHONY : CMakeFiles/PN_Triangles.dir/clean
 
 CMakeFiles/PN_Triangles.dir/depend:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/Workspace/openGL-Tessellation /data/Workspace/openGL-Tessellation /data/Workspace/openGL-Tessellation/build /data/Workspace/openGL-Tessellation/build /data/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sayak/Workspace/openGL-Tessellation /home/sayak/Workspace/openGL-Tessellation /home/sayak/Workspace/openGL-Tessellation/build /home/sayak/Workspace/openGL-Tessellation/build /home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles/PN_Triangles.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/PN_Triangles.dir/depend
 

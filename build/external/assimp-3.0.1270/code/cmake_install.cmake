@@ -1,4 +1,4 @@
-# Install script for directory: /data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code
+# Install script for directory: /home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,7 +33,7 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "libassimp3.0-r1270-OGLtuts")
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/data/Workspace/openGL-Tessellation/build/external/assimp-3.0.1270/code/libassimp.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/sayak/Workspace/openGL-Tessellation/build/external/assimp-3.0.1270/code/libassimp.a")
 endif()
 
 if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
@@ -46,45 +46,45 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/assimp" TYPE FILE FILES
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/anim.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/ai_assert.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/camera.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/color4.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/color4.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/config.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/defs.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/cfileio.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/light.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/material.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/material.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/mesh.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/postprocess.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/quaternion.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/quaternion.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/scene.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/texture.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/types.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector2.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector2.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector3.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector3.inl"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/version.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/cimport.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/importerdesc.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Importer.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/DefaultLogger.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/ProgressHandler.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/IOStream.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/IOSystem.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Logger.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/LogStream.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/NullLogger.hpp"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/cexport.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Exporter.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/anim.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/ai_assert.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/camera.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/color4.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/color4.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/config.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/defs.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/cfileio.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/light.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/material.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/material.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix3x3.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/matrix4x4.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/mesh.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/postprocess.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/quaternion.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/quaternion.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/scene.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/texture.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/types.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector2.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector2.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector3.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/vector3.inl"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/version.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/cimport.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/importerdesc.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Importer.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/DefaultLogger.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/ProgressHandler.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/IOStream.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/IOSystem.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Logger.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/LogStream.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/NullLogger.hpp"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/cexport.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Exporter.hpp"
     )
 endif()
 
@@ -98,9 +98,9 @@ if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
 file(INSTALL DESTINATION "/assimp/Compiler" TYPE FILE FILES
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Compiler/pushpack1.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Compiler/poppack1.h"
-    "/data/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/pstdint.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Compiler/pushpack1.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/../include/assimp/Compiler/poppack1.h"
+    "/home/sayak/Workspace/openGL-Tessellation/external/assimp-3.0.1270/code/pstdint.h"
     )
 endif()
 

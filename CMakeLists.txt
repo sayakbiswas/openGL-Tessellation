@@ -45,10 +45,10 @@ add_executable(PN_Triangles
 	common/vboindexer.cpp
 	PN_Triangles/shaders/Standard.vert
 	PN_Triangles/shaders/Standard.frag
-	PN_Triangles/shaders/Tessellation.vert
-	PN_Triangles/shaders/Tessellation.tesc
-	PN_Triangles/shaders/Tessellation.tese
-	PN_Triangles/shaders/Tessellation.frag
+	PN_Triangles/shaders/Tessellation.vs.glsl
+	PN_Triangles/shaders/Tessellation.tc.glsl
+	PN_Triangles/shaders/Tessellation.te.glsl
+	PN_Triangles/shaders/Tessellation.fs.glsl
 )
 
 target_link_libraries(PN_Triangles

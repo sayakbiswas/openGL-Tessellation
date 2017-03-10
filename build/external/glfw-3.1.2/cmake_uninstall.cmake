@@ -1,9 +1,9 @@
 
-if (NOT EXISTS "/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: \"/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/install_manifest.txt\"")
+if (NOT EXISTS "/home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: \"/home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/install_manifest.txt\"")
 endif()
 
-file(READ "/data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/install_manifest.txt" files)
+file(READ "/home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 
 foreach (file ${files})

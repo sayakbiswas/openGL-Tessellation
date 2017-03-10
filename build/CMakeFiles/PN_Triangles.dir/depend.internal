@@ -91,7 +91,7 @@ CMakeFiles/PN_Triangles.dir/PN_Triangles/pn_triangles.cpp.o
  ../external/glm-0.9.7.1/glm/vec3.hpp
  ../external/glm-0.9.7.1/glm/vec4.hpp
  ../external/glm-0.9.7.1/glm/vector_relational.hpp
- /data/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp
+ /home/sayak/Workspace/openGL-Tessellation/PN_Triangles/pn_triangles.cpp
 CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o
  ../external/glm-0.9.7.1/glm/common.hpp
  ../external/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -172,8 +172,8 @@ CMakeFiles/PN_Triangles.dir/common/objloader.cpp.o
  ../external/glm-0.9.7.1/glm/vec3.hpp
  ../external/glm-0.9.7.1/glm/vec4.hpp
  ../external/glm-0.9.7.1/glm/vector_relational.hpp
- /data/Workspace/openGL-Tessellation/common/objloader.cpp
- /data/Workspace/openGL-Tessellation/common/objloader.hpp
+ /home/sayak/Workspace/openGL-Tessellation/common/objloader.cpp
+ /home/sayak/Workspace/openGL-Tessellation/common/objloader.hpp
 CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o
  ../external/glm-0.9.7.1/glm/common.hpp
  ../external/glm-0.9.7.1/glm/detail/_fixes.hpp
@@ -254,5 +254,5 @@ CMakeFiles/PN_Triangles.dir/common/vboindexer.cpp.o
  ../external/glm-0.9.7.1/glm/vec3.hpp
  ../external/glm-0.9.7.1/glm/vec4.hpp
  ../external/glm-0.9.7.1/glm/vector_relational.hpp
- /data/Workspace/openGL-Tessellation/common/vboindexer.cpp
- /data/Workspace/openGL-Tessellation/common/vboindexer.hpp
+ /home/sayak/Workspace/openGL-Tessellation/common/vboindexer.cpp
+ /home/sayak/Workspace/openGL-Tessellation/common/vboindexer.hpp

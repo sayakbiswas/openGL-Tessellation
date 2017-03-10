@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/Workspace/openGL-Tessellation
+CMAKE_SOURCE_DIR = /home/sayak/Workspace/openGL-Tessellation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
+CMAKE_BINARY_DIR = /home/sayak/Workspace/openGL-Tessellation/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -124,14 +124,14 @@ install/local/fast: install/local
 
 # The main all target
 all: cmake_check_build_system
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_progress_start /data/Workspace/openGL-Tessellation/build/CMakeFiles /data/Workspace/openGL-Tessellation/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/progress.marks
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /data/Workspace/openGL-Tessellation/build/CMakeFiles 0
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles /home/sayak/Workspace/openGL-Tessellation/build/external/assimp-3.0.1270/contrib/zlib/CMakeFiles/progress.marks
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sayak/Workspace/openGL-Tessellation/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/clean
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/clean
 .PHONY : clean
 
 # The main clean target
@@ -141,22 +141,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/preinstall
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/preinstall
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/rule:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/rule
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f CMakeFiles/Makefile2 external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/rule
 .PHONY : external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/rule
 
 # Convenience name for target.
@@ -166,7 +166,7 @@ zlib: external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/rule
 
 # fast build rule for target.
 zlib/fast:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build
 .PHONY : zlib/fast
 
 adler32.o: adler32.c.o
@@ -175,7 +175,7 @@ adler32.o: adler32.c.o
 
 # target to build an object file
 adler32.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/adler32.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/adler32.c.o
 .PHONY : adler32.c.o
 
 adler32.i: adler32.c.i
@@ -184,7 +184,7 @@ adler32.i: adler32.c.i
 
 # target to preprocess a source file
 adler32.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/adler32.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/adler32.c.i
 .PHONY : adler32.c.i
 
 adler32.s: adler32.c.s
@@ -193,7 +193,7 @@ adler32.s: adler32.c.s
 
 # target to generate assembly for a file
 adler32.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/adler32.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/adler32.c.s
 .PHONY : adler32.c.s
 
 compress.o: compress.c.o
@@ -202,7 +202,7 @@ compress.o: compress.c.o
 
 # target to build an object file
 compress.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/compress.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/compress.c.o
 .PHONY : compress.c.o
 
 compress.i: compress.c.i
@@ -211,7 +211,7 @@ compress.i: compress.c.i
 
 # target to preprocess a source file
 compress.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/compress.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/compress.c.i
 .PHONY : compress.c.i
 
 compress.s: compress.c.s
@@ -220,7 +220,7 @@ compress.s: compress.c.s
 
 # target to generate assembly for a file
 compress.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/compress.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/compress.c.s
 .PHONY : compress.c.s
 
 crc32.o: crc32.c.o
@@ -229,7 +229,7 @@ crc32.o: crc32.c.o
 
 # target to build an object file
 crc32.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/crc32.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/crc32.c.o
 .PHONY : crc32.c.o
 
 crc32.i: crc32.c.i
@@ -238,7 +238,7 @@ crc32.i: crc32.c.i
 
 # target to preprocess a source file
 crc32.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/crc32.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/crc32.c.i
 .PHONY : crc32.c.i
 
 crc32.s: crc32.c.s
@@ -247,7 +247,7 @@ crc32.s: crc32.c.s
 
 # target to generate assembly for a file
 crc32.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/crc32.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/crc32.c.s
 .PHONY : crc32.c.s
 
 deflate.o: deflate.c.o
@@ -256,7 +256,7 @@ deflate.o: deflate.c.o
 
 # target to build an object file
 deflate.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/deflate.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/deflate.c.o
 .PHONY : deflate.c.o
 
 deflate.i: deflate.c.i
@@ -265,7 +265,7 @@ deflate.i: deflate.c.i
 
 # target to preprocess a source file
 deflate.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/deflate.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/deflate.c.i
 .PHONY : deflate.c.i
 
 deflate.s: deflate.c.s
@@ -274,7 +274,7 @@ deflate.s: deflate.c.s
 
 # target to generate assembly for a file
 deflate.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/deflate.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/deflate.c.s
 .PHONY : deflate.c.s
 
 inffast.o: inffast.c.o
@@ -283,7 +283,7 @@ inffast.o: inffast.c.o
 
 # target to build an object file
 inffast.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inffast.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inffast.c.o
 .PHONY : inffast.c.o
 
 inffast.i: inffast.c.i
@@ -292,7 +292,7 @@ inffast.i: inffast.c.i
 
 # target to preprocess a source file
 inffast.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inffast.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inffast.c.i
 .PHONY : inffast.c.i
 
 inffast.s: inffast.c.s
@@ -301,7 +301,7 @@ inffast.s: inffast.c.s
 
 # target to generate assembly for a file
 inffast.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inffast.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inffast.c.s
 .PHONY : inffast.c.s
 
 inflate.o: inflate.c.o
@@ -310,7 +310,7 @@ inflate.o: inflate.c.o
 
 # target to build an object file
 inflate.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inflate.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inflate.c.o
 .PHONY : inflate.c.o
 
 inflate.i: inflate.c.i
@@ -319,7 +319,7 @@ inflate.i: inflate.c.i
 
 # target to preprocess a source file
 inflate.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inflate.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inflate.c.i
 .PHONY : inflate.c.i
 
 inflate.s: inflate.c.s
@@ -328,7 +328,7 @@ inflate.s: inflate.c.s
 
 # target to generate assembly for a file
 inflate.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inflate.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inflate.c.s
 .PHONY : inflate.c.s
 
 inftrees.o: inftrees.c.o
@@ -337,7 +337,7 @@ inftrees.o: inftrees.c.o
 
 # target to build an object file
 inftrees.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inftrees.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inftrees.c.o
 .PHONY : inftrees.c.o
 
 inftrees.i: inftrees.c.i
@@ -346,7 +346,7 @@ inftrees.i: inftrees.c.i
 
 # target to preprocess a source file
 inftrees.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inftrees.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inftrees.c.i
 .PHONY : inftrees.c.i
 
 inftrees.s: inftrees.c.s
@@ -355,7 +355,7 @@ inftrees.s: inftrees.c.s
 
 # target to generate assembly for a file
 inftrees.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inftrees.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/inftrees.c.s
 .PHONY : inftrees.c.s
 
 trees.o: trees.c.o
@@ -364,7 +364,7 @@ trees.o: trees.c.o
 
 # target to build an object file
 trees.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/trees.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/trees.c.o
 .PHONY : trees.c.o
 
 trees.i: trees.c.i
@@ -373,7 +373,7 @@ trees.i: trees.c.i
 
 # target to preprocess a source file
 trees.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/trees.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/trees.c.i
 .PHONY : trees.c.i
 
 trees.s: trees.c.s
@@ -382,7 +382,7 @@ trees.s: trees.c.s
 
 # target to generate assembly for a file
 trees.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/trees.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/trees.c.s
 .PHONY : trees.c.s
 
 zutil.o: zutil.c.o
@@ -391,7 +391,7 @@ zutil.o: zutil.c.o
 
 # target to build an object file
 zutil.c.o:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/zutil.c.o
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/zutil.c.o
 .PHONY : zutil.c.o
 
 zutil.i: zutil.c.i
@@ -400,7 +400,7 @@ zutil.i: zutil.c.i
 
 # target to preprocess a source file
 zutil.c.i:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/zutil.c.i
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/zutil.c.i
 .PHONY : zutil.c.i
 
 zutil.s: zutil.c.s
@@ -409,7 +409,7 @@ zutil.s: zutil.c.s
 
 # target to generate assembly for a file
 zutil.c.s:
-	cd /data/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/zutil.c.s
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(MAKE) -f external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/build.make external/assimp-3.0.1270/contrib/zlib/CMakeFiles/zlib.dir/zutil.c.s
 .PHONY : zutil.c.s
 
 # Help Target
@@ -463,6 +463,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

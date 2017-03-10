@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /data/Workspace/openGL-Tessellation
+CMAKE_SOURCE_DIR = /home/sayak/Workspace/openGL-Tessellation
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
+CMAKE_BINARY_DIR = /home/sayak/Workspace/openGL-Tessellation/build
 
 # Utility rule file for uninstall.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /data/Workspace/openGL-Tessellation/build
 include external/glfw-3.1.2/CMakeFiles/uninstall.dir/progress.make
 
 external/glfw-3.1.2/CMakeFiles/uninstall:
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2 && /usr/bin/cmake -P /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/cmake_uninstall.cmake
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2 && /usr/bin/cmake -P /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/cmake_uninstall.cmake
 
 uninstall: external/glfw-3.1.2/CMakeFiles/uninstall
 uninstall: external/glfw-3.1.2/CMakeFiles/uninstall.dir/build.make
@@ -67,10 +67,10 @@ external/glfw-3.1.2/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : external/glfw-3.1.2/CMakeFiles/uninstall.dir/build
 
 external/glfw-3.1.2/CMakeFiles/uninstall.dir/clean:
-	cd /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2 && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : external/glfw-3.1.2/CMakeFiles/uninstall.dir/clean
 
 external/glfw-3.1.2/CMakeFiles/uninstall.dir/depend:
-	cd /data/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /data/Workspace/openGL-Tessellation /data/Workspace/openGL-Tessellation/external/glfw-3.1.2 /data/Workspace/openGL-Tessellation/build /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2 /data/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sayak/Workspace/openGL-Tessellation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sayak/Workspace/openGL-Tessellation /home/sayak/Workspace/openGL-Tessellation/external/glfw-3.1.2 /home/sayak/Workspace/openGL-Tessellation/build /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2 /home/sayak/Workspace/openGL-Tessellation/build/external/glfw-3.1.2/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : external/glfw-3.1.2/CMakeFiles/uninstall.dir/depend
 
