@@ -7,21 +7,16 @@ struct T2F
     vec4 color;
 };
 
+in vec3 position_worldspace;
+in vec3 normal_cameraspace;
+in vec3 eyeDirection_cameraspace;
+in vec3 lightDirection_cameraspace;
 in T2F tedata;
 out vec3 color;
 
-uniform mat4 M;
-uniform mat4 V;
 uniform vec3 lightPosition_worldspace;
 
 void main() {
-    vec3 position_worldspace = (M * vec4(tedata.position, 1)).xyz;
-    vec3 vertexPosition_cameraspace = (V * M * vec4(tedata.position, 1)).xyz;
-    vec3 eyeDirection_cameraspace = vec3(0.0f, 0.0f, 0.0f) - vertexPosition_cameraspace;
-    vec3 lightPosition_cameraspace = (V * vec4(lightPosition_worldspace, 1)).xyz;
-    vec3 lightDirection_cameraspace = lightPosition_cameraspace + eyeDirection_cameraspace;
-    vec3 normal_cameraspace = (V * M * vec4(tedata.normal, 0)).xyz;
-
     vec3 lightColor = vec3(1, 1, 0.5);
     float lightPower = 600.0f;
 

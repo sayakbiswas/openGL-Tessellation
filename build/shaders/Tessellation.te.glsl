@@ -14,13 +14,18 @@ struct T2F
     vec4 color;
 };
 
-layout(triangles, equal_spacing, cw) in;
+layout(triangles, equal_spacing, ccw) in;
 in TC2E tcdata[];
 out T2F tedata;
+out vec3 position_worldspace;
+out vec3 normal_cameraspace;
+out vec3 eyeDirection_cameraspace;
+out vec3 lightDirection_cameraspace;
 
 uniform mat4 M;
 uniform mat4 V;
 uniform mat4 P;
+uniform vec3 lightPosition_worldspace;
 
 void main() {
     vec3 p1 = tcdata[0].position;
@@ -95,4 +100,14 @@ void main() {
     //tedata.color = vec4(c1, 1.0);
 
     gl_Position = P * V * M * vec4(pos, 1.0);
+
+    position_worldspace = (M * vec4(pos, 1.0)).xyz;
+
+    vec3 vertexPosition_cameraspace = (V * M * vec4(pos, 1.0)).xyz;
+    eyeDirection_cameraspace = vec3(0.0f, 0.0f, 0.0f) - vertexPosition_cameraspace;
+
+    vec3 lightPosition_cameraspace = (V * vec4(lightPosition_worldspace, 1)).xyz;
+    lightDirection_cameraspace = lightPosition_cameraspace + eyeDirection_cameraspace;
+
+    normal_cameraspace = (V * M * vec4(tedata.normal, 0)).xyz;
 }
